@@ -1,0 +1,249 @@
+
+/*
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+.nav {
+  overflow: hidden;
+  background-color: #021f07;
+}
+
+.nav a {
+  float: left;
+  color: rgb(222, 237, 221);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: rgb(193, 213, 191);
+  color: #021f07;
+}
+
+
+
+body{
+    background-color:rgb(222, 237, 221);
+}
+
+h1{
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 70px;
+    font-weight: 700;
+    color:#053e0e;
+    text-decoration: underline;
+}
+
+h2{
+  font-size: x-large;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  color: #021f07;
+}
+
+.homepg{
+  font-size: large;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Lora", serif;
+  padding-left: 20px;
+  padding-right: 30px;
+  transform: translate(0px, 20px);
+}
+
+img{
+    width: 300px;
+    float: left;
+    border: 1px rgb(27, 96, 17) solid;
+    object-fit: cover; 
+    margin: 10px;
+    filter: drop-shadow(4px 4px 1px rgba(3, 100, 0, 0.675));
+}
+
+table, th, td {
+    border: 1px solid #053e0e;
+    font-family: "Lora", serif;
+    font-weight: 100;
+    color:#053e0e;
+}
+
+th{
+    color:rgb(126, 164, 36);
+    text-decoration: underline rgb(20, 89, 9);
+}
+
+.container{
+    display: flex;
+    gap: 5px;
+    border: 1px rgb(49, 153, 33) solid;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container img{
+    width: 150px;
+    border: 1px rgb(27, 96, 17) solid;
+    object-fit: cover; 
+    filter: drop-shadow(4px 4px 1px rgba(3, 100, 0, 0.675));
+}
+
+
+#items{
+  font-size: x-large;
+  text-align: left;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  color: #021f07;
+  float:left;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+#step1{
+  font-size: large;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Lora", serif;
+  color: #021f07;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+
+#step2{
+  font-size: large;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Lora", serif;
+  color: #021f07;
+}
+
+#step3{
+  font-size: large;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Lora", serif;
+  color: #021f07;
+}
+
+#sites{
+  font-size: x-large;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  color: #021f07;
+  float: center;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+#sites a:link {
+  color: rgb(5, 47, 5);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#sites a:visited {
+  color: rgb(3, 23, 4);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#changeMessage{
+  font-size: large;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Lora", serif;
+  color: #021f07;
+}
+
+#buttonChange{
+  display: grid;
+  place-items: center;
+}
+
+#btn{
+  cursor: pointer;
+}
+
+footer p{
+    position: fixed;
+    left: 0px;
+    font-weight: 600;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: "Lora", serif;
+    color:#021f07;
+    font-size: medium;
+}
+
+@media (max-width: 1024px) {
+
+  .container img{
+    width: 100px;
+    border: 1px rgb(27, 96, 17) solid;
+    object-fit: cover; 
+    box-shadow: 4px 4px 1px rgba(3, 100, 0, 0.675);
+}
+    
+}
+
+@media (max-width: 600px){
+  h1{
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 60px;
+    font-weight: 700;
+    color:#053e0e;
+    text-decoration: underline;
+}
+  footer p{
+    bottom: 0px;
+    position: sticky;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  tbody {
+    display: flex;
+    flex-direction: row;
+}
+  tr {
+    display: flex;
+    flex-direction: column;
+}
+  th{
+    height: 50px;
+  }
+}
