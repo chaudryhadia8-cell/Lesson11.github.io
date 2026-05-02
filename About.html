@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matcha-Site</title>
+    <link rel="stylesheet" href="style.css">
+    </script>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="Lesson 11 Final.html">Home</a>
+        <a href="Cultivars+Types.html">Ways to prepare and Types</a>
+        <a href="Howtomake.html">How to make</a>
+        <a href="WheretoBuy.html">Where to buy</a>
+        <a href="About.html">About</a>
+    </div>
+
+
+    <h1>Matcha Information Website</h1>
+
+
+    <div id="sites">
+        <h2>About Me:</h2>
+        <p>Hello! I want to spread information on something
+            I am passionate about, and I made this site to do that!
+            Preaparing matcha can be a calming ritual and helps you clear
+            your mind. You can also meet new people through it, and have
+            it in common with friends. You can introduce people to something
+            new, and overall, matcha can be a boost of energy without the strong
+            spike of energy from coffee. 
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Join our newsletter!</h2>
+        <form id="contactForm">
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <button  type="submit"  class="btn">Submit</button>
+        </form>
+        <div id="thankYouMessage" class="hidden">
+            Thanks! Your message has been sent.
+        </div>
+    </div>
+
+        <footer>
+            <p class="laptop-text">Located in the Lehigh Valley, PA. 123-456-7890. hvc5612@psu.edu<br></p>
+        </footer>
+    </div>
+
+     <script>
+        const contactForm = document.getElementById('contactForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            contactForm.classList.add('hidden');
+
+            thankYouMessage.classList.remove('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
